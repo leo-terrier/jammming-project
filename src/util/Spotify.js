@@ -4,7 +4,7 @@ let token ;
 const clientID = "85a71ceb802d40578fe87356ce648a8e";
 let userId;
 ///const redirectURI = "http://practiceAPIspot.surge.sh";
-const redirectURI = "http://localhost:3000/";
+const redirectURI = "https://golden-gnome-22c18a.netlify.app";
 
 export const Spotify = {
   getAccessToken () {
