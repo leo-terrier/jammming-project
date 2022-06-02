@@ -17,7 +17,7 @@ export class Playlist extends React.Component {
 ////Ajouter this.props.playlistName => not used..../////
     return (
       <div className="Playlist">
-      <input defaultValue={'New Playlist'} 
+      <input value={this.props.playlistName} 
       onChange={this.handleNameChange}/>
       <TrackList 
       tracks={this.props.playlistTracks}
@@ -26,6 +26,7 @@ export class Playlist extends React.Component {
       />
 
       <button className="Playlist-save" onClick={this.props.onSave}>SAVE TO SPOTIFY</button>
+      <button className="Playlist-save" onClick={this.props.createNewPlaylist}>CREATE NEW PLAYLISTE</button>
       </div>
     )
   }

@@ -1,23 +1,26 @@
 import React from 'react'
 import './PlaylistList.css'
+import { PreexistingPlaylist } from '../PreexistingPlaylist/PreexistingPlaylist';
 
 export class PlaylistList extends React.Component {
+  constructor(props){
+    super(props);
+  }
 
 async componentDidMount(){
   this.props.getPlaylists()
-  console.log(this.props.playlistList)
 }
 
-/* loadTracks(e){
-  e.target.key
 
-} */
 
 render() {
 
   const listOfPlaylists = this.props.playlistList.map(playlist => (
-    <li key={playlist.uri} /* onClick={loadTracks} */>
-      <p>{playlist.name}</p>
+    <li key={playlist.id} >
+      <PreexistingPlaylist
+      playlist={playlist}
+      handleClick={this.props.loadPlaylistTracks}
+      />
     </li>
     ))
 
