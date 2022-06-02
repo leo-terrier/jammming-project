@@ -1,7 +1,13 @@
 
 # Exercising with API calls (to Spotify's API) and react
+
+
 **Browse music**
+
+
 **Update Playlist**
+
+
 **Create new Playlists**
 
 
