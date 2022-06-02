@@ -1,3 +1,14 @@
+
+# Exercising with API calls (to Spotify's API) and react
+**Browse music**
+**Update Playlist**
+**Create new Playlists**
+
+
+-------------------------------------------------
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
